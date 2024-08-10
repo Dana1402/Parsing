@@ -13,6 +13,6 @@ sheet = workbook.sheet1
 
 csv_file = '/Users/anastasiya/PycharmProjects/Selenium/indeed_data.csv'
 with open(csv_file, "r") as f:
-    values = [r for r in csv.reader(f)]
+    values = [r for r in csv.reader(f, delimiter=';')]
     sheet.update(values)
 
